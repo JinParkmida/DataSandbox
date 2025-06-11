@@ -1,0 +1,594 @@
+{
+    "blackpink": {
+        "title": "BlackPink",
+        "bio": "Blackpink (Hangul: 블랙핑크), stylized as BLACKPINK or BLΛƆKPIИK, is a South Korean girl group formed by YG Entertainment and the first girl group to debut under the same entertainment company seven years after 2NE1. The group consists of four members: Jennie, Lisa, Jisoo, and Rosé . They officially debuted on August 8, 2016 with the single album Square One . Blackpink fans are called 'Blink'. The fandom name Blink means the fans start with Blackpink and end with Blackpink. On June 16, 2021, it was announced that BLACKPINK: The Movie will air on August 8, as part of their '4+1 PROJECT' to commemorate the group's fifth anniversary.",
+        "assets_folder_name": "blackpink",
+        "main_group_image": "blackpink.jpg",
+        "total_youtube_subscribers": 75000000,
+        "most_watched_videos": [
+            {
+                "video_total_views": 1923978660,
+                "video_title": "BLACKPINK - ‘뚜두뚜두 (DDU-DU DDU-DU)’ M/V",
+                "video_date_published": "06/2018",
+                "video_url": "https://www.youtube.com/watch?v=IHNzOHi8sJs&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-1.png"
+            },
+            {
+                "video_total_views": 1634242310,
+                "video_title": "BLACKPINK - 'Kill This Love' M/V",
+                "video_date_published": "04/2019",
+                "video_url": "https://www.youtube.com/watch?v=2S24-y0Ij3Y&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-2.jpg"
+            },
+            {
+                "video_total_views": 1453565660,
+                "video_title": "BLACKPINK - '붐바야 (BOOMBAYAH)' M/V",
+                "video_date_published": "08/2016",
+                "video_url": "https://www.youtube.com/watch?v=bwmSjveL3Lc&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-3.jpg"
+            },
+            {
+                "video_total_views": 1194619456,
+                "video_title": "BLACKPINK - '마지막처럼 (AS IF IT'S YOUR LAST)' M/V",
+                "video_date_published": "06/2017",
+                "video_url": "https://www.youtube.com/watch?v=Amq-qlqbjYA&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-4.jpg"
+            }
+        ],
+        "total_spotify_followers": 20975005,
+        "most_streamed_songs": [
+            {
+                "song_total_views": 444436073,
+                "song_title": "Kill This Love",
+                "song_date_published": "04/2019",
+                "song_url": "https://open.spotify.com/track/6hvczQ05jc1yGlp9zhb95V?si=0b11bb48a22749bb",
+                "song_thumbnail": "song-1.jpg"
+            },
+            {
+                "song_total_views": 421583842,
+                "song_title": "How you like that",
+                "song_date_published": "06/2020",
+                "song_url": "https://open.spotify.com/track/4SFknyjLcyTLJFPKD2m96o?si=56b99a212b91420c",
+                "song_thumbnail": "song-2.jpg"
+            },
+            {
+                "song_total_views": 415130847,
+                "song_title": "Kiss and Make Up",
+                "song_date_published": "08/2016",
+                "song_url": "https://open.spotify.com/track/7jr3iPu4O4bTCVwLMbdU2i?si=71ecca38da1c484c",
+                "song_thumbnail": "song-3.jpg"
+            },
+            {
+                "song_total_views": 374758576,
+                "song_title": "DDU-DU DDU-DU",
+                "song_date_published": "06/2018",
+                "song_url": "https://open.spotify.com/track/4lQsB3ERTWSNaAN1IkuNRl?si=4cfd30e255a54f3f",
+                "song_thumbnail": "song-4.jpg"
+            }
+        ],
+        "instagram": {
+            "hashtag": "@blackpinkofficial",
+            "members_instagram": [
+                {
+                    "hashtag": "@lalalalisa_m",
+                    "total_followers": 50800000,
+                    "account_thumbnail": "account-1.jpg",
+                    "url": "https://www.instagram.com/lalalalisa_m/"
+                },
+                {
+                    "hashtag": "@jennierubyjane",
+                    "total_followers": 43700000,
+                    "account_thumbnail": "account-2.jpg",
+                    "url": "https://www.instagram.com/jennierubyjane/"
+                },
+                {
+                    "hashtag": "@roses_are_rosie",
+                    "total_followers": 39500000,
+                    "account_thumbnail": "account-3.jpg",
+                    "url": "https://www.instagram.com/roses_are_rosie/"
+                },
+                {
+                    "hashtag": "@sooyaa__",
+                    "total_followers": 39500000,
+                    "account_thumbnail": "account-4.jpg",
+                    "url": "https://www.instagram.com/sooyaaa__/"
+                }
+            ]
+        },
+        "social_media_info": [
+            {
+                "social_media": "Twitter",
+                "account": "@blackpink",
+                "total_followers": 3803218,
+                "new_followers_today": 4154
+            },
+            {
+                "social_media": "Facebook",
+                "account": "@blackpinkofficial",
+                "total_followers": 16090000,
+                "new_followers_today": 4006
+            },
+            {
+                "social_media": "Fancafe",
+                "account": "@blackpinki",
+                "total_followers": 49437,
+                "new_followers_today": 9
+            }
+        ],
+        "total_album_sales": 2495893,
+        "album_list": [
+            {
+                "album_title": "square up",
+                "album_info": "1st Mini Album",
+                "album_released_date": "15/06/2018",
+                "album_total_sales": 371698,
+                "album_thumbnail": "album-1.jpg"
+            },
+            {
+                "album_title": "kill this love",
+                "album_info": "2nd Mini Album",
+                "album_released_date": "05/04/2019",
+                "album_total_sales": 456628,
+                "album_thumbnail": "album-2.webp"
+            },
+            {
+                "album_title": "How you like that",
+                "album_info": "1st Single Album",
+                "album_released_date": "26/06/2020",
+                "album_total_sales": 306900,
+                "album_thumbnail": "album-3.jpg"
+            },
+            {
+                "album_title": "the album",
+                "album_info": "1st Full Album",
+                "album_released_date": "20/10/2020",
+                "album_total_sales": 1360667,
+                "album_thumbnail": "album-4.jpg"
+            }
+        ]
+    },
+    "girls-generation": {
+        "title": "Girls' Generation",
+        "bio": "Girls' Generation (소녀시대) es un grupo femenino formado por SM Entertainment en 2007.[1][2] También se les conoce como SNSD o SoShi (소시), los cuales son abreviaciones para el nombre del grupo en coreano. Girls' Generation está formado por ocho miembros: Taeyeon, Sunny, Tiffany, Hyoyeon, Yuri, Sooyoung, Yoona y Seohyun. El 30 de septiembre de 2014, Jessica abandonó el grupo.",
+        "assets_folder_name": "blackpink",
+        "main_group_image": "gg.jpg",
+        "total_youtube_subscribers": 2790000,
+        "most_watched_videos": [
+            {
+                "video_total_views": 297444749,
+                "video_title": "Girls' Generation 소녀시대 'Gee' MV",
+                "video_date_published": "06/2009",
+                "video_url": "https://www.youtube.com/watch?v=U7mPqycQ0tQ&ab_channel=SMTOWN",
+                "video_thumbnail": "thumbnail-1.png"
+            },
+            {
+                "video_total_views": 256723376,
+                "video_title": "Girls' Generation 소녀시대 'I GOT A BOY' MV",
+                "video_date_published": "01/2013",
+                "video_url": "https://www.youtube.com/watch?v=wq7ftOZBy0E&ab_channel=SMTOWN",
+                "video_thumbnail": "thumbnail-2.jpg"
+            },
+            {
+                "video_total_views": 279236901,
+                "video_title": "Girls' Generation 소녀시대 'The Boys' MV (KOR Ver.)",
+                "video_date_published": "08/2011",
+                "video_url": "https://www.youtube.com/watch?v=6pA_Tou-DPI&ab_channel=SMTOWN",
+                "video_thumbnail": "thumbnail-3.jpg"
+            },
+            {
+                "video_total_views": 162442173,
+                "video_title": "少女時代 / ＭＲ．ＴＡＸＩ　（DANCE VER.）",
+                "video_date_published": "04/2011",
+                "video_url": "https://www.youtube.com/watch?v=fhseD2tRLUY&ab_channel=UNIVERSALMUSICJAPAN",
+                "video_thumbnail": "thumbnail-4.jpg"
+            }
+        ],
+        "total_spotify_followers": 4218067,
+        "most_streamed_songs": [
+            {
+                "song_total_views": 48556247,
+                "song_title": "Lion Heart",
+                "song_date_published": "01/2015",
+                "song_url": "https://open.spotify.com/track/405SQUJdQut02dxtuQ0CZ3?si=be77250c1844469e",
+                "song_thumbnail": "song-1.jpg"
+            },
+            {
+                "song_total_views": 421583842,
+                "song_title": "How you like that",
+                "song_date_published": "06/2020",
+                "song_url": "https://open.spotify.com/track/4SFknyjLcyTLJFPKD2m96o?si=56b99a212b91420c",
+                "song_thumbnail": "song-2.jpg"
+            },
+            {
+                "song_total_views": 415130847,
+                "song_title": "Kiss and Make Up",
+                "song_date_published": "08/2016",
+                "song_url": "https://open.spotify.com/track/7jr3iPu4O4bTCVwLMbdU2i?si=71ecca38da1c484c",
+                "song_thumbnail": "song-3.jpg"
+            },
+            {
+                "song_total_views": 374758576,
+                "song_title": "DDU-DU DDU-DU",
+                "song_date_published": "06/2018",
+                "song_url": "https://open.spotify.com/track/4lQsB3ERTWSNaAN1IkuNRl?si=4cfd30e255a54f3f",
+                "song_thumbnail": "song-4.jpg"
+            }
+        ],
+        "instagram": {
+            "hashtag": "@blackpinkofficial",
+            "members_instagram": [
+                {
+                    "hashtag": "@lalalalisa_m",
+                    "total_followers": 50800000,
+                    "account_thumbnail": "account-1.jpg",
+                    "url": "https://www.instagram.com/lalalalisa_m/"
+                },
+                {
+                    "hashtag": "@jennierubyjane",
+                    "total_followers": 43700000,
+                    "account_thumbnail": "account-2.jpg",
+                    "url": "https://www.instagram.com/jennierubyjane/"
+                },
+                {
+                    "hashtag": "@roses_are_rosie",
+                    "total_followers": 39500000,
+                    "account_thumbnail": "account-3.jpg",
+                    "url": "https://www.instagram.com/roses_are_rosie/"
+                },
+                {
+                    "hashtag": "@sooyaa__",
+                    "total_followers": 39500000,
+                    "account_thumbnail": "account-4.jpg",
+                    "url": "https://www.instagram.com/sooyaaa__/"
+                }
+            ]
+        },
+        "social_media_info": [
+            {
+                "social_media": "Twitter",
+                "account": "@blackpink",
+                "total_followers": 3803218,
+                "new_followers_today": 4154
+            },
+            {
+                "social_media": "Facebook",
+                "account": "@blackpinkofficial",
+                "total_followers": 16090000,
+                "new_followers_today": 4006
+            },
+            {
+                "social_media": "Fancafe",
+                "account": "@blackpinki",
+                "total_followers": 49437,
+                "new_followers_today": 9
+            }
+        ],
+        "total_album_sales": 2495893,
+        "album_list": [
+            {
+                "album_title": "square up",
+                "album_info": "1st Mini Album",
+                "album_released_date": "15/06/2018",
+                "album_total_sales": 371698,
+                "album_thumbnail": "album-1.jpg"
+            },
+            {
+                "album_title": "kill this love",
+                "album_info": "2nd Mini Album",
+                "album_released_date": "05/04/2019",
+                "album_total_sales": 456628,
+                "album_thumbnail": "album-2.webp"
+            },
+            {
+                "album_title": "How you like that",
+                "album_info": "1st Single Album",
+                "album_released_date": "26/06/2020",
+                "album_total_sales": 306900,
+                "album_thumbnail": "album-3.jpg"
+            },
+            {
+                "album_title": "the album",
+                "album_info": "1st Full Album",
+                "album_released_date": "20/10/2020",
+                "album_total_sales": 1360667,
+                "album_thumbnail": "album-4.jpg"
+            }
+        ]
+    },
+    "bts": {
+        "title": "BTS",
+        "bio": "BTS (en hangul, 방탄소년단; romanización revisada del coreano, Bangtan Sonyeondan) es un grupo surcoreano formado en Seúl en 2010 y que debutó en 2013 bajo la compañía Big Hit Music. Está compuesto por siete integrantes: Jin, Suga, J-Hope, RM, Jimin, V y Jungkook, quienes coescriben y coproducen la mayor parte de su material discográfico. A pesar de haber sido creado con un estilo principalmente hip hop, ha llegado a incorporar una gran variedad de géneros en su repertorio musical.",
+        "assets_folder_name": "blackpink",
+        "main_group_image": "bts.jpg",
+        "total_youtube_subscribers": 75000000,
+        "most_watched_videos": [
+            {
+                "video_total_views": 1923978660,
+                "video_title": "BLACKPINK - ‘뚜두뚜두 (DDU-DU DDU-DU)’ M/V",
+                "video_date_published": "06/2018",
+                "video_url": "https://www.youtube.com/watch?v=IHNzOHi8sJs&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-1.png"
+            },
+            {
+                "video_total_views": 1634242310,
+                "video_title": "BLACKPINK - 'Kill This Love' M/V",
+                "video_date_published": "04/2019",
+                "video_url": "https://www.youtube.com/watch?v=2S24-y0Ij3Y&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-2.jpg"
+            },
+            {
+                "video_total_views": 1453565660,
+                "video_title": "BLACKPINK - '붐바야 (BOOMBAYAH)' M/V",
+                "video_date_published": "08/2016",
+                "video_url": "https://www.youtube.com/watch?v=bwmSjveL3Lc&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-3.jpg"
+            },
+            {
+                "video_total_views": 1194619456,
+                "video_title": "BLACKPINK - '마지막처럼 (AS IF IT'S YOUR LAST)' M/V",
+                "video_date_published": "06/2017",
+                "video_url": "https://www.youtube.com/watch?v=Amq-qlqbjYA&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-4.jpg"
+            }
+        ],
+        "total_spotify_followers": 20975005,
+        "most_streamed_songs": [
+            {
+                "song_total_views": 444436073,
+                "song_title": "Kill This Love",
+                "song_date_published": "04/2019",
+                "song_url": "https://open.spotify.com/track/6hvczQ05jc1yGlp9zhb95V?si=0b11bb48a22749bb",
+                "song_thumbnail": "song-1.jpg"
+            },
+            {
+                "song_total_views": 421583842,
+                "song_title": "How you like that",
+                "song_date_published": "06/2020",
+                "song_url": "https://open.spotify.com/track/4SFknyjLcyTLJFPKD2m96o?si=56b99a212b91420c",
+                "song_thumbnail": "song-2.jpg"
+            },
+            {
+                "song_total_views": 415130847,
+                "song_title": "Kiss and Make Up",
+                "song_date_published": "08/2016",
+                "song_url": "https://open.spotify.com/track/7jr3iPu4O4bTCVwLMbdU2i?si=71ecca38da1c484c",
+                "song_thumbnail": "song-3.jpg"
+            },
+            {
+                "song_total_views": 374758576,
+                "song_title": "DDU-DU DDU-DU",
+                "song_date_published": "06/2018",
+                "song_url": "https://open.spotify.com/track/4lQsB3ERTWSNaAN1IkuNRl?si=4cfd30e255a54f3f",
+                "song_thumbnail": "song-4.jpg"
+            }
+        ],
+        "instagram": {
+            "hashtag": "@blackpinkofficial",
+            "members_instagram": [
+                {
+                    "hashtag": "@lalalalisa_m",
+                    "total_followers": 50800000,
+                    "account_thumbnail": "account-1.jpg",
+                    "url": "https://www.instagram.com/lalalalisa_m/"
+                },
+                {
+                    "hashtag": "@jennierubyjane",
+                    "total_followers": 43700000,
+                    "account_thumbnail": "account-2.jpg",
+                    "url": "https://www.instagram.com/jennierubyjane/"
+                },
+                {
+                    "hashtag": "@roses_are_rosie",
+                    "total_followers": 39500000,
+                    "account_thumbnail": "account-3.jpg",
+                    "url": "https://www.instagram.com/roses_are_rosie/"
+                },
+                {
+                    "hashtag": "@sooyaa__",
+                    "total_followers": 39500000,
+                    "account_thumbnail": "account-4.jpg",
+                    "url": "https://www.instagram.com/sooyaaa__/"
+                }
+            ]
+        },
+        "social_media_info": [
+            {
+                "social_media": "Twitter",
+                "account": "@blackpink",
+                "total_followers": 3803218,
+                "new_followers_today": 4154
+            },
+            {
+                "social_media": "Facebook",
+                "account": "@blackpinkofficial",
+                "total_followers": 16090000,
+                "new_followers_today": 4006
+            },
+            {
+                "social_media": "Fancafe",
+                "account": "@blackpinki",
+                "total_followers": 49437,
+                "new_followers_today": 9
+            }
+        ],
+        "total_album_sales": 2495893,
+        "album_list": [
+            {
+                "album_title": "square up",
+                "album_info": "1st Mini Album",
+                "album_released_date": "15/06/2018",
+                "album_total_sales": 371698,
+                "album_thumbnail": "album-1.jpg"
+            },
+            {
+                "album_title": "kill this love",
+                "album_info": "2nd Mini Album",
+                "album_released_date": "05/04/2019",
+                "album_total_sales": 456628,
+                "album_thumbnail": "album-2.webp"
+            },
+            {
+                "album_title": "How you like that",
+                "album_info": "1st Single Album",
+                "album_released_date": "26/06/2020",
+                "album_total_sales": 306900,
+                "album_thumbnail": "album-3.jpg"
+            },
+            {
+                "album_title": "the album",
+                "album_info": "1st Full Album",
+                "album_released_date": "20/10/2020",
+                "album_total_sales": 1360667,
+                "album_thumbnail": "album-4.jpg"
+            }
+        ]
+    },
+    "nct-127": {
+        "title": "NCT 127",
+        "bio": "NCT 127 (en hangul, 엔시티 127; es la segunda subunidad de la boy band surcoreana NCT, formado por el sello SM Entertainment en 2016.La subunidad basada en Seúl, debutó en julio de 2016 con el lanzamiento de su primer EP, NCT 127. El grupo consistía de siete integrantes: Taeil, Taeyong, Yuta, Jaehyun, Winwin, Mark y Haechan,pero Doyoung, Johnny y Jungwoo fueron agregados en diciembre de 2016 y septiembre de 2018, respectivamente.",
+        "assets_folder_name": "blackpink",
+        "main_group_image": "nct.jpg",
+        "total_youtube_subscribers": 75000000,
+        "most_watched_videos": [
+            {
+                "video_total_views": 1923978660,
+                "video_title": "BLACKPINK - ‘뚜두뚜두 (DDU-DU DDU-DU)’ M/V",
+                "video_date_published": "06/2018",
+                "video_url": "https://www.youtube.com/watch?v=IHNzOHi8sJs&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-1.png"
+            },
+            {
+                "video_total_views": 1634242310,
+                "video_title": "BLACKPINK - 'Kill This Love' M/V",
+                "video_date_published": "04/2019",
+                "video_url": "https://www.youtube.com/watch?v=2S24-y0Ij3Y&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-2.jpg"
+            },
+            {
+                "video_total_views": 1453565660,
+                "video_title": "BLACKPINK - '붐바야 (BOOMBAYAH)' M/V",
+                "video_date_published": "08/2016",
+                "video_url": "https://www.youtube.com/watch?v=bwmSjveL3Lc&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-3.jpg"
+            },
+            {
+                "video_total_views": 1194619456,
+                "video_title": "BLACKPINK - '마지막처럼 (AS IF IT'S YOUR LAST)' M/V",
+                "video_date_published": "06/2017",
+                "video_url": "https://www.youtube.com/watch?v=Amq-qlqbjYA&ab_channel=BLACKPINK",
+                "video_thumbnail": "thumbnail-4.jpg"
+            }
+        ],
+        "total_spotify_followers": 20975005,
+        "most_streamed_songs": [
+            {
+                "song_total_views": 444436073,
+                "song_title": "Kill This Love",
+                "song_date_published": "04/2019",
+                "song_url": "https://open.spotify.com/track/6hvczQ05jc1yGlp9zhb95V?si=0b11bb48a22749bb",
+                "song_thumbnail": "song-1.jpg"
+            },
+            {
+                "song_total_views": 421583842,
+                "song_title": "How you like that",
+                "song_date_published": "06/2020",
+                "song_url": "https://open.spotify.com/track/4SFknyjLcyTLJFPKD2m96o?si=56b99a212b91420c",
+                "song_thumbnail": "song-2.jpg"
+            },
+            {
+                "song_total_views": 415130847,
+                "song_title": "Kiss and Make Up",
+                "song_date_published": "08/2016",
+                "song_url": "https://open.spotify.com/track/7jr3iPu4O4bTCVwLMbdU2i?si=71ecca38da1c484c",
+                "song_thumbnail": "song-3.jpg"
+            },
+            {
+                "song_total_views": 374758576,
+                "song_title": "DDU-DU DDU-DU",
+                "song_date_published": "06/2018",
+                "song_url": "https://open.spotify.com/track/4lQsB3ERTWSNaAN1IkuNRl?si=4cfd30e255a54f3f",
+                "song_thumbnail": "song-4.jpg"
+            }
+        ],
+        "instagram": {
+            "hashtag": "@blackpinkofficial",
+            "members_instagram": [
+                {
+                    "hashtag": "@lalalalisa_m",
+                    "total_followers": 50800000,
+                    "account_thumbnail": "account-1.jpg",
+                    "url": "https://www.instagram.com/lalalalisa_m/"
+                },
+                {
+                    "hashtag": "@jennierubyjane",
+                    "total_followers": 43700000,
+                    "account_thumbnail": "account-2.jpg",
+                    "url": "https://www.instagram.com/jennierubyjane/"
+                },
+                {
+                    "hashtag": "@roses_are_rosie",
+                    "total_followers": 39500000,
+                    "account_thumbnail": "account-3.jpg",
+                    "url": "https://www.instagram.com/roses_are_rosie/"
+                },
+                {
+                    "hashtag": "@sooyaa__",
+                    "total_followers": 39500000,
+                    "account_thumbnail": "account-4.jpg",
+                    "url": "https://www.instagram.com/sooyaaa__/"
+                }
+            ]
+        },
+        "social_media_info": [
+            {
+                "social_media": "Twitter",
+                "account": "@blackpink",
+                "total_followers": 3803218,
+                "new_followers_today": 4154
+            },
+            {
+                "social_media": "Facebook",
+                "account": "@blackpinkofficial",
+                "total_followers": 16090000,
+                "new_followers_today": 4006
+            },
+            {
+                "social_media": "Fancafe",
+                "account": "@blackpinki",
+                "total_followers": 49437,
+                "new_followers_today": 9
+            }
+        ],
+        "total_album_sales": 2495893,
+        "album_list": [
+            {
+                "album_title": "square up",
+                "album_info": "1st Mini Album",
+                "album_released_date": "15/06/2018",
+                "album_total_sales": 371698,
+                "album_thumbnail": "album-1.jpg"
+            },
+            {
+                "album_title": "kill this love",
+                "album_info": "2nd Mini Album",
+                "album_released_date": "05/04/2019",
+                "album_total_sales": 456628,
+                "album_thumbnail": "album-2.webp"
+            },
+            {
+                "album_title": "How you like that",
+                "album_info": "1st Single Album",
+                "album_released_date": "26/06/2020",
+                "album_total_sales": 306900,
+                "album_thumbnail": "album-3.jpg"
+            },
+            {
+                "album_title": "the album",
+                "album_info": "1st Full Album",
+                "album_released_date": "20/10/2020",
+                "album_total_sales": 1360667,
+                "album_thumbnail": "album-4.jpg"
+            }
+        ]
+    }
+}
