@@ -1,5 +1,6 @@
 import { Outlet } from '@tanstack/react-location';
 import Header from './components/Header';
+import ErrorBoundary from './components/ErrorBoundary';
 import ArtistProvider from './providers/ArtistProvider';
 import SpotifyTokenProvider from './providers/SpotifyTokenProvider';
 import gsap from 'gsap';
@@ -12,18 +13,20 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
 
   return (
-    <SpotifyTokenProvider>
-      <ArtistProvider>
-        <DimensionsProvider>
-          <div className="App">
-            <Header />
-            <main className="main-content w-screen overflow-hidden">
-              <Outlet />
-            </main>
-          </div>
-        </DimensionsProvider>
-      </ArtistProvider>
-    </SpotifyTokenProvider>
+    <ErrorBoundary>
+      <SpotifyTokenProvider>
+        <ArtistProvider>
+          <DimensionsProvider>
+            <div className="App">
+              <Header />
+              <main className="main-content w-screen overflow-hidden">
+                <Outlet />
+              </main>
+            </div>
+          </DimensionsProvider>
+        </ArtistProvider>
+      </SpotifyTokenProvider>
+    </ErrorBoundary>
   );
 }
 

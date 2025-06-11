@@ -83,6 +83,27 @@
     .changing-border{
         @apply border border-black dark:border-cream;
     }
+    .glass-effect {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .dark .glass-effect {
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .gradient-text {
+        background: linear-gradient(135deg, theme(colors.black), theme(colors.gray.600));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .dark .gradient-text {
+        background: linear-gradient(135deg, theme(colors.cream), theme(colors.gray.300));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
     .swiper.members-carousel::after {
         content: '';
         position: absolute;

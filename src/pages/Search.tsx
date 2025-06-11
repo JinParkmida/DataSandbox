@@ -1,142 +1,132 @@
 import { Link } from '@tanstack/react-location'
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useCallback, useLayoutEffect, useMemo, useState } from 'react'
-import { useSpotifySearch } from '../hooks/useSpotify';
+import { useQuery } from 'react-query';
+import { searchArtists } from '../api';
 import { useArtist } from '../providers/ArtistProvider'
+import LoadingSpinner from '../components/LoadingSpinner';
+import { Search as SearchIcon } from 'lucide-react';
 
-type ArtistsGroupedByName = {
-    group: string,
-    children: SpotifyApi.ArtistObjectFull[]
-}
 
 
 export default function Search() {
     const { setArtist } = useArtist();
-    
-    const { data } = useSpotifySearch('genre:k-pop', {limit: 50, });
     const [searchQuery, setSearchQuery] = useState('');
+    const [debouncedQuery, setDebouncedQuery] = useState('');
 
-    const onSearchArtist = (event: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(event.target.value); 
+    // Debounce search query
+    React.useEffect(() => {
+        const timer = setTimeout(() => {
+            setDebouncedQuery(searchQuery);
+        }, 300);
+        return () => clearTimeout(timer);
+    }, [searchQuery]);
+
+    const { data: searchResults, isLoading } = useQuery(
+        ['searchArtists', debouncedQuery],
+        () => searchArtists(debouncedQuery),
+        {
+            enabled: debouncedQuery.length > 0,
+            staleTime: 5 * 60 * 1000, // 5 minutes
+        }
+    );
+
+    const onSearchArtist = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchQuery(event.target.value);
+    };
 
     useLayoutEffect(() => {
         setArtist("")
     }, [])
 
     return (
-        <div className="px-8 py-16">
+        <div className="px-8 py-16 min-h-screen bg-cream dark:bg-black">
             <motion.div 
-                className="relative mb-6 text-center space-y-4 mx-40 2xl:mx-60"
+                className="relative mb-8 text-center space-y-6 max-w-2xl mx-auto"
                 initial={{y: 50,opacity: 0}}
                 animate={{y: 0,opacity: 1}}
                 transition={{
                     duration: 0.5,
                 }}
             >
-                <label htmlFor="artist-search" className="text-4xl">Find your favourite KPOP groups & artists</label>
-                <div className="before:absolute before:w-full before:scale-x-0 hover:before:scale-x-100 before:origin-center before:h-[2px] before:bg-dark dark:before:bg-cream before:z-[1] before:left-0 before:bottom-0 before:transition-transform">
+                <h1 className="text-3xl md:text-4xl font-bold gradient-text">
+                    Find your favourite KPOP groups & artists
+                </h1>
+                <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <SearchIcon className="h-5 w-5 text-gray-400" />
+                    </div>
                     <input
                         id="artist-search"
                         type="text"
-                        placeholder="Type here"
-                        className="w-full py-4 text-2xl font-light placeholder:text-center focus:outline-none bg-transparent border-b-[0.5px] border-black dark:border-cream text-center"
+                        placeholder="Search for artists..."
+                        className="w-full pl-10 pr-4 py-4 text-lg font-light focus:outline-none bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 rounded-lg focus:border-black dark:focus:border-cream transition-colors duration-300"
                         value={searchQuery}
                         onChange={onSearchArtist}
                     />
                 </div>
             </motion.div>
-            <section className="artist-list px-40 mt-20 2xl:px-60 flex flex-wrap min-h-[50vh]">
-                {data && <ArtistList data={data} setArtist={setArtist} searchQuery={searchQuery}/> }
+            
+            <section className="artist-list max-w-6xl mx-auto mt-12">
+                {isLoading && (
+                    <div className="flex justify-center py-12">
+                        <LoadingSpinner size="lg" />
+                    </div>
+                )}
+                
+                {searchResults && searchResults.length > 0 && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    >
+                        {searchResults.map((artist, index) => (
+                            <motion.div
+                                key={artist.title}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                                className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 changing-border"
+                            >
+                                <Link 
+                                    to={`/artist/${artist.title.toLowerCase().replace(/\s+/g, '-')}`}
+                                    onClick={() => setArtist(artist.title)}
+                                    className="block"
+                                >
+                                    <h3 className="text-xl font-bold mb-2">{artist.title}</h3>
+                                    <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3">
+                                        {artist.bio.substring(0, 150)}...
+                                    </p>
+                                </Link>
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                )}
+                
+                {searchQuery && !isLoading && searchResults?.length === 0 && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="text-center py-12"
+                    >
+                        <p className="text-gray-600 dark:text-gray-400 text-lg">
+                            No artists found for "{searchQuery}"
+                        </p>
+                    </motion.div>
+                )}
+                
+                {!searchQuery && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="text-center py-12"
+                    >
+                        <p className="text-gray-600 dark:text-gray-400 text-lg">
+                            Start typing to search for your favorite K-pop artists
+                        </p>
+                    </motion.div>
+                )}
             </section>
         </div>
-    )
-}
-
-interface ArtistListProps {
-    data: SpotifyApi.ArtistSearchResponse,
-    setArtist: (name: string) => void,
-    searchQuery: string;
-    children?: React.ReactChild
-}
-
-export const ArtistList = ({ data, setArtist, searchQuery }: ArtistListProps) => {
-    const GENRES_TO_FILTER = ["k-pop", "k-pop girl group", "k-pop boy group", "chinese idol pop", "korean r&b"];
-
-    const onFilterBySearchQuery = (artist: SpotifyApi.ArtistObjectFull) => {
-        if(!searchQuery) return true;
-        const lowerCaseName = artist.name.toLowerCase();
-        const lowerCaseSearchQuery = searchQuery.toLowerCase().trim();
-        
-        return lowerCaseName.includes(lowerCaseSearchQuery);
-    }
-
-    const onFilterByGenre = (artist: SpotifyApi.ArtistObjectFull) => artist.genres.some(genre =>  GENRES_TO_FILTER.includes(genre));
-
-    const onSortByName = (artistA: {name: string}, artistB: {name: string}) => artistA.name.toUpperCase().localeCompare(artistB.name.toUpperCase(), 'en', { sensitivity: 'base' })
-
-    const onReducedToGroups = useCallback(
-        (groups: {[s: string]: ArtistsGroupedByName}, artist: SpotifyApi.ArtistObjectFull) => {
-            // get first letter of name of current element
-            let firstLetter = artist.name[0];
-            let group: string = firstLetter.search(/\(|[0-9]/g) ? firstLetter.toUpperCase() : "0-9";
-            // if there is no property in accumulator with this letter create it
-            if(!groups[group]) groups[group] = {group, children: [artist]}
-            // if there is push current element to children array for that letter
-            else groups[group].children.push(artist);
-            // return accumulator
-            return groups;
-        },
-        [],
-    )
-
-    const artistsGroupedByName = useMemo((): Array<ArtistsGroupedByName> => {
-        const groupedObj = data.artists.items
-        .filter(onFilterByGenre)
-        .filter(onFilterBySearchQuery)
-        .sort(onSortByName)
-        .reduce(onReducedToGroups, {})
-        return Object.values(groupedObj);
-    }, [data, searchQuery])
-
-    const normalizeArtistName = (name: string) => name.replaceAll(/\s/g, "-").toLowerCase();
-
-    return (
-        <AnimatePresence>
-            {artistsGroupedByName.map((section: ArtistsGroupedByName, index) => (
-                <motion.div 
-                    key={`artist-section-${section.group}`} 
-                    className="relative w-full mb-8"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0}}
-                    transition={{
-                        easings: ["easeIn", "easeOut"],
-                        duration: 0.4,
-                    }}
-                >
-                    <motion.h3 className="absolute -left-40 text-3xl">{section.group}</motion.h3>
-                    <motion.ol layout className="text-xl font-light grid gap-4 grid-cols-4 text-left pt-4">
-                        <AnimatePresence>
-                            {section.children.map(artist => (
-                                <motion.li 
-                                    key={artist.id}
-                                    initial={{y: 36, opacity: 0 }}
-                                    animate={{y: 0, opacity: 1 }}
-                                    exit={{y: -36, opacity: 0}}
-                                    transition={{
-                                        easings: ["easeIn", "easeOut"],
-                                        duration: 0.4,
-                                        delay: 0.4
-                                    }}
-                                >
-                                    <Link to={`/artist/${normalizeArtistName(artist.name)}/${artist.id}`} onClick={() => setArtist(artist.name)}>
-                                        {artist.name}
-                                    </Link>
-                                </motion.li>
-                            ))}
-                        </AnimatePresence>
-                    </motion.ol>
-                </motion.div>
-            ))}
-        </AnimatePresence>
     )
 }

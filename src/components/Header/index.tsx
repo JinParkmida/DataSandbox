@@ -1,7 +1,7 @@
 import { Link } from '@tanstack/react-location'
 import { IoIosStar } from 'react-icons/io'
 import { IoSearchOutline } from 'react-icons/io5'
-import { Variants } from 'framer-motion'
+import { Variants, motion } from 'framer-motion'
 import { useArtist } from '../../providers/ArtistProvider'
 import { GiCircle } from 'react-icons/gi'
 import DarkModeSwitcher from '../DarkModeSwitcher'
@@ -42,31 +42,40 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-screen px-4 sm:px-8 py-6 z-20">
+    <motion.header 
+      className="fixed top-0 left-0 w-screen px-4 sm:px-8 py-6 z-20 glass-effect"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <div className="flex flex-nowrap items-center justify-between">
         <div className="flex-none flex items-center">
-          <Link
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
             to="artists"
             className="text-2xl md:text-lg inline-flex items-center font-light space-x-2"
-          >
+            >
             <IoSearchOutline title="Search" />
             <span className='text-sm md:leading-none md:text-base invisible -translate-x-10 opacity-0 sm:visible sm:translate-x-0 sm:opacity-100 transition-all duration-500'>Search</span>
-          </Link>
+            </Link>
+          </motion.div>
         </div>
         <div className="relative flex-none flex items-center justify-center h-14 -ml-12">
           <h2>
-            <Link to="/" className="logo">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link to="/" className="logo">
               <span className="text-sm md:text-base bg-cream dark:bg-black font-dm-serif">
                 K <IoIosStar className="inline pb-1" /> STAR
               </span>
               <GiCircle className='aspect-square w-[100%] h-[100%] absolute top-0 bottom-0 left-1/2 right-0 -translate-x-1/2 -skew-x-[40deg] origin-center -z-[1]' />
-            </Link>
+              </Link>
+            </motion.div>
           </h2>
         </div>
         <div className="flex-none z-10">
           <DarkModeSwitcher />
         </div>
       </div>
-    </header>
+    </motion.header>
   )
 }
